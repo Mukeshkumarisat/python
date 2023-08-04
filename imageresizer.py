@@ -39,4 +39,4 @@ def resize_image(base_size,path_of_image,destination,new_image_name):
         hsize = int((float(img.size[1]) * float(wpercent)))
         img = img.resize((base_width, hsize), Image.ANTIALIAS)
         img = img.crop((0, 0, img.size[0], base_size))  # Keeps sky area in image, crops from lower part
-        img.save(destination+'/'+new_image_name)
+       
